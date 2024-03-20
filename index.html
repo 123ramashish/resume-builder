@@ -1,0 +1,155 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8" /> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+	<title>Resume Creator</title> 
+	<!-- style link here -->
+	<link rel="stylesheet" href="style.css" /> 
+</head> 
+
+<body> 
+	
+    <!-- header text  -->
+    <header class="header">
+        <div>
+           <h1>Build Your Resume</h1> 
+           <p>Google Reference</p> 
+        </div>
+    </header>
+
+    <!-- input container starts here -->
+
+<main>
+    <div class="main-container">
+        <!-- left side input container -->
+        <aside class="left">
+
+            <!-- name section starting here -->
+            <div class="name">
+                <h2>Your Name *</h2>
+                <input id="name" type="text" placeholder="Name" required>
+            </div>
+
+
+            <!-- experiance section starting here -->
+            <div class="experiance">
+                <h5>Experiance </h5>
+                <label for="company-name">Company *
+                    <input id="company-name" type="text" placeholder="Company name">
+                </label>
+                <label for="company-location">Location *
+                    <input id="company-location" type="text" placeholder="">
+                </label>
+                <label for="job-title">Job title *
+                    <input id="job-title" type="text" placeholder="">
+                </label>
+                <label for="duration">Duration * <br>
+                    <input id="job-starting-date" type=""placeholder="Job starting Date - job ending date"><br>
+                    
+                </label>
+                <p><textarea placeholder="Job discription" name="" id="job-discription" cols="30" rows="10"></textarea></p>
+                <button id="more-experiance">Add</button>
+                </div>
+
+
+
+<!-- education section starting -->
+ <div class="education">
+                <h5>Education </h5>
+                <label for="school-name">School Name *
+                    <input id="school-name" type="text" placeholder="School name">
+                </label>
+                <label for="school-location">Location *
+                    <input id="school-location" type="text" placeholder="School Locatioin">
+                </label>
+                <label for="degree">Degree *
+                    <input id="degree" type="text" placeholder="">
+                </label>
+                <label for="duration">Education Duration *<br>
+                 <input id="degree-starting-date" type=""placeholder="Degree starting Date - degree-ending-date">
+                </label>
+                <p><textarea placeholder="Education discription" name="" id="education-discription" cols="30" rows="10"></textarea></p>
+                <button id="more-education">Add</button>
+            </div>
+
+
+
+
+<!-- project section starting here -->
+
+<div class="project">
+                <h5>Project </h5>
+                <label for="project-name">Project Name *
+                    <input id="project-name" type="text" placeholder="Project name">
+                </label>
+                <label for="project-type">Project Type *
+                    <input id="project-type" type="text" placeholder="School Locatioin">
+                </label>
+               <p> <textarea placeholder="Project discription" name="" id="project-discription" cols="30" rows="10"></textarea></p>
+                <button id="more-project">Add</button>
+            </div>
+        
+
+        </aside>
+
+
+
+ <!-- right side input container -->
+        <aside class="right">
+            <div class="address">
+                <label for="street">Street *
+                <input type="text" id="street" placeholder="Street name">
+                </label>
+                <label for="city">City *
+                <input type="text" id="city" placeholder="City name">
+                </label>
+                <label for="mobile">Mobile No *
+                <input type="number" id="mobile">
+                </label>
+                <label for="email">Email *
+                <input type="email" id="email">
+                </label>
+            </div>
+
+<!-- skill section start -->
+<div class="skill-conatiner">
+    <h5>Skills </h5>
+    <p>
+    <input type="text" id="skill"></p>
+    <button id="skill-add">Add</button>
+</div>
+
+<!-- Award section start -->
+<div class="award-conatiner">
+    <h5>Awards </h5>
+    <p><input type="text" id="award" placeholder="Award Name"></p>
+   <p> <textarea name="" id="award-discription" placeholder="Award Discription" cols="30" rows="10"></textarea></p>
+    <button id="award-add">Add</button>
+</div>
+
+
+<!-- language section start -->
+
+<div class="language-conatiner">
+    <h5>Language *</h5>
+    <p><input type="text" id="language"></p>
+    <button id="language-add">Add</button>
+
+</div>
+        </aside>
+    </div>
+
+</main>
+
+<footer>
+    <button id="generate">Generate</button>
+</footer>
+
+	<!-- script link here -->
+	<script src="script.js"></script> 
+</body> 
+
+</html>

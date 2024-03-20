@@ -1,0 +1,155 @@
+/* style.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgb(30, 30, 30), rgb(80, 80, 80));
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header div {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.main-container {
+  padding: 10px 30px;
+  background: rgb(240, 240, 240);
+  border-radius: 10px 10px 0 0;
+  height: auto;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  width: 45%;
+}
+.right {
+  width: 45%;
+}
+input {
+  width: 90%;
+  padding: 6px;
+  margin: 4px 0;
+  border-style: none;
+  box-shadow: 1px 1px rgb(151, 149, 149);
+}
+textarea {
+  width: 90%;
+  height: 4em;
+  margin: 4px 0;
+  border: none;
+  box-shadow: 1px 1px rgb(151, 149, 149);
+}
+button {
+  width: 3em;
+  background-color: rgb(86, 185, 224);
+  border: none;
+  padding: 3px;
+  border-radius: 4px;
+  float: right;
+  margin: 6px 2em 8px 0;
+}
+button:hover {
+  background-color: rgb(94, 224, 94);
+  transition: background-color 0.5s;
+}
+button:active {
+  position: relative;
+  bottom: 1px;
+  right: 1px;
+}
+.experiance,
+.education,
+.project,
+.address,
+.skill-conatiner,
+.award-conatiner,
+.language-conatiner {
+  margin: 10px 0 0 6px;
+  display: flex;
+  flex-direction: column;
+}
+h5 {
+  margin-bottom: 6px;
+  color: rgb(86, 185, 224);
+}
+.education,
+.project,
+.address,
+.award-conatiner,
+.language-conatiner,
+.skill-conatiner {
+  margin-top: 2.3em;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(240, 240, 240);
+  margin-bottom: 6em;
+  width: 60%;
+  margin: auto;
+  border-radius: 0 0 10px 10px;
+}
+#generate {
+  width: 6em;
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(105, 227, 105);
+
+  /* transform: translateX(150%); */
+  margin: auto;
+  margin-bottom: 12px;
+}
+#generate:active {
+  position: relative;
+  bottom: 2px;
+  right: 2px;
+}
+
+/* media queries begin */
+@media screen and (max-width: 725px) {
+  .main-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
+  .experiance,
+  .education,
+  .project,
+  .address,
+  .skill-conatiner,
+  .award-conatiner,
+  .language-conatiner {
+    align-items: start;
+  }
+  input {
+    width: 70vw;
+  }
+  footer {
+    width: 100%;
+  }
+}
+
+/* media queries end  */
